@@ -526,13 +526,14 @@
             <label class="label-class">
               Email
               <input type="text" name="email" />
-              <svg class="svg-icon-vector">
-                <use
-                  width="12"
-                  height="12"
-                  href="./images/icons.svg#icon-vector-email"
-                ></use>
-              </svg>
+              <span class="svg-icon-vector">
+                <svg>
+                  <use
+                    width="12"
+                    height="12"
+                    href="./images/icons.svg#icon-vector-email"
+                  ></use></svg
+              ></span>
             </label>
             <label class="label-class">
               Komentarz
@@ -543,22 +544,20 @@
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
-            <span class="rules">
-              <label class="last-label">
-                <input class="last-input" type="checkbox" /><span
-                  ><svg class="icon-vector-last">
-                    <use
-                      width="16"
-                      height="15"
-                      href="./images/icons.svg#icon-vector-last"
-                    ></use></svg></span
-              ></label>
-              <p>Oświadczam iż akceptuję</p>
-              <p class="rules-color">Regulamin</p>
-              i
-              <p class="rules-color">Politykę Prywatności.</p></span
+            <label class="rules">
+              <input class="last-input" type="checkbox" name="rules" /><span
+                class="icon-vector-last"
+              >
+                <svg class="bird" width="16" height="15">
+                  <use href="./images/icons.svg#icon-vector-last"></use></svg
+                >Oświadczam iż akceptuję
+                <a class="rules-color" href="#">Regulamin </a>i
+                <a class="rules-color" href="#">Politykę Prywatności.</a></span
+              ></label
             >
-            <button class="submit-class" type="submit">Wyślij</button>
+            <div>
+              <button class="submit-class" type="submit">Wyślij</button>
+            </div>
           </form>
         </div>
       </div>
