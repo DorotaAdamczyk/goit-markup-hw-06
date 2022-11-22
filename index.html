@@ -479,19 +479,20 @@
           </div>
         </div>
         <div>
-          <div class="subscribe-to-news">ZAPISZ SIĘ DO NEWSLETTERA</div>
-          <div class="sub-email">
-            <p class="e-mail-foot">E-mail</p>
-            <p class="subscribe">
-              Zapisz się<svg class="icon-send" width="24.7" height="24">
+          <form>
+            <label class="subscribe-to-news">ZAPISZ SIĘ DO NEWSLETTERA</label>
+            <input class="sub-email" name="email" placeholder="E-mail" />
+            <button class="submit-class" type="submit">
+              Zapisz się
+              <svg class="icon-send" width="24.7" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
-            </p>
-          </div>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="icon-Vector" width="18" height="18">
@@ -526,14 +527,15 @@
             <label class="label-class">
               Email
               <input type="text" name="email" />
-              <span class="svg-icon-vector">
+              <svg class="svg-icon-vector">
                 <svg>
                   <use
                     width="12"
                     height="12"
                     href="./images/icons.svg#icon-vector-email"
-                  ></use></svg
-              ></span>
+                  ></use>
+                </svg>
+              </svg>
             </label>
             <label class="label-class">
               Komentarz
