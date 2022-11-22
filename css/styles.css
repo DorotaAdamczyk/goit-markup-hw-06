@@ -149,7 +149,7 @@ footer {
   direction: underline;
 }
 .foot-container {
-  margin: 0 auto;
+  padding-top: 0 auto;
 }
 .header-secorndary {
   font-weight: 700;
@@ -243,7 +243,6 @@ footer {
   font-size: 26px;
   line-height: 1.9375;
   letter-spacing: 0.03;
-  padding-top: 60px;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -345,11 +344,9 @@ button {
   color: #2196f3;
   fill: #2196f3;
 }
-
 .pointer {
   cursor: pointer;
 }
-
 .frame {
   width: 270px;
   background-color: #ffffff;
@@ -415,7 +412,6 @@ button {
   margin: 0 auto;
   padding-right: 70px;
 }
-
 .container-lorem {
   display: flex;
   justify-content: space-between;
@@ -471,7 +467,6 @@ button {
   padding-right: 30px;
   margin: 0px auto;
 }
-
 .photo22 {
   width: 270px;
   padding-right: 30px;
@@ -504,7 +499,6 @@ figure {
   text-transform: uppercase;
   color: #ffffff;
   padding-left: 70px;
-  padding-top: 30px;
   padding-bottom: 20px;
 }
 .socials-icons {
@@ -603,14 +597,12 @@ figure {
   height: 16px;
 }
 .all-foot-container {
+  padding-top: 40px;
+  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1200px;
-  align-items: center;
-  margin: 0 auto;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin-left: 50px;
 }
 .subscribe-to-news {
   height: 16px;
@@ -621,50 +613,21 @@ figure {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-left: 78px;
-  display: flex;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  margin-left: 78px;
+  padding-bottom: 30px;
 }
-.e-mail-foot {
+
+.sub-email {
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   width: 358px;
   height: 50px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding-left: 16px;
-}
-.subscribe {
-  background: #2196f3;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background: #2196f3;
-  width: 205.88px;
-  height: 50px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.sub-email {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding-left: 78px;
+  margin-left: 78px;
 }
 
-.light-portfolio:hover,
+.color-change .light-portfolio:hover,
 .light-portfolio:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -809,9 +772,9 @@ figure {
   margin-top: 32px;
 }
 input {
-  padding-left: 40px;
   margin-top: 4px;
   padding: 8px;
+  padding-left: 40px;
   font-family: inherit;
   width: 448px;
   height: 40px;
@@ -854,11 +817,14 @@ textarea {
 }
 textarea:hover,
 textarea:focus {
-  border: 1px solid #2196f3;
+  outline: 1px solid #2196f3;
+}
+textarea:active {
+  border: #2196f3;
 }
 .textarea-class:focus,
 .textarea-class:hover {
-  border: 1px solid #2196f3;
+  fill: 1px solid #2196f3;
 }
 
 .textarea-class {
@@ -893,7 +859,7 @@ textarea:focus {
 .bird {
   margin-left: 20px;
   margin-right: 8px;
-  color: #ffffff;
+  fill: #ffffff;
   background-color: #ffffff;
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 2px;
