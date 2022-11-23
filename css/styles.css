@@ -601,8 +601,8 @@ figure {
   width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 50px;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 .subscribe-to-news {
   height: 16px;
@@ -613,24 +613,26 @@ figure {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-left: 78px;
   padding-bottom: 30px;
   display: flex;
+  padding-left: 78px;
 }
 
 .sub-email {
-  color: rgba(255, 255, 255, 0.6);
+  color: #000000;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   width: 358px;
   height: 50px;
-  margin-left: 78px;
+  margin: 0;
 }
 .sub-email-sub {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
+  padding-left: 78px;
 }
 .color-change .light-portfolio:hover,
 .light-portfolio:focus {
@@ -824,13 +826,6 @@ textarea:hover,
 textarea:focus {
   outline: 1px solid #2196f3;
 }
-textarea:active {
-  border: #2196f3;
-}
-.textarea-class:focus,
-.textarea-class:hover {
-  fill: 1px solid #2196f3;
-}
 
 .textarea-class {
   font-style: normal;
@@ -858,9 +853,7 @@ textarea:active {
   visibility: hidden;
   height: 0;
 }
-.icon-vector-last {
-  margin-top: 20px;
-}
+
 .bird {
   margin-left: 20px;
   margin-right: 8px;
@@ -871,12 +864,17 @@ textarea:active {
   transition: border 0.05s, color 0.05s, bacground-color 0.05s;
   transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
-.bird:hover {
-  fill: #ffffff;
+.bird:hover,
+.bird:focus {
   background-color: #2196f3;
   border-color: #2196f3;
+  fill: #ffffff;
 }
-
+input:checked + svg.bird {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  fill: #ffffff;
+}
 .rules-color {
   color: #2196f3;
 }
@@ -894,8 +892,6 @@ textarea:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 163px;
 }
 .svg-icon-vector {
   width: 12px;
@@ -917,6 +913,9 @@ textarea:active {
 .svg-icon-vector-last {
   margin-top: 20px;
 }
-input:checked + span .icon-vectot-last {
-  opacity: 1;
+.send {
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
